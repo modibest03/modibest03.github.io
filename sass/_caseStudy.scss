@@ -1,0 +1,112 @@
+.case-study {
+
+    &__video {
+        width: 50%;
+        padding: 4.8rem;
+        background-image: linear-gradient(
+            to right, 
+            rgba(#0872BA, 0.8), 
+            rgba(#0872BA, 0.8)),
+            url(../img/MaskGroup4.png);
+        background-size: cover;
+        background-position: center;
+
+        @include respond (tab-port) {
+            width: 100%;
+        }
+
+        @include respond (phone) {
+            padding: 2rem;        
+        }
+    }
+
+    &__client {
+        width: 50%;
+        padding: 4.8rem;
+
+        @include respond (tab-port) {
+            width: 100%;
+        }
+
+        @include respond (phone) {
+            padding: 2rem;       
+        }
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-align: center;
+
+        @include respond (tab-port) {
+            font-size: 2rem;
+        }
+
+        @include respond (phone) {
+            font-size: 1.5rem;       
+        }
+
+        &-video {
+            margin-top: 12.2rem;
+            margin-bottom: 3.7rem;
+            color: var(--color-secondary);
+        }
+
+        &-client {
+            margin-bottom: 1.7rem;
+        }
+    }
+
+    &__play {
+        font-size: 2.1rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 8.2rem;
+
+        &-video {
+            color: var(--color-secondary);
+            // border-bottom: 1px solid var(--color-secondary);
+        }
+
+        &-client {
+            color: var(--color-primary);
+        }
+    }
+
+    &__thanks {
+        text-decoration: none;
+
+        &-bg {
+            font-size: 2.6rem;
+            font-weight: 600;
+            display: block;
+
+            &-video {
+                color: var(--color-secondary);
+            }
+    
+            &-client {
+                color: var(--color-primary);
+            }
+        }
+
+        &-sm {
+            font-size: 1.4rem;
+            font-weight: 400;
+            display: block;
+
+            &-video {
+                color: var(--color-secondary);
+            }
+    
+            &-client {
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    &__client-logo {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,50 @@
+.services {
+    padding: 7.7rem 33rem;
+    text-align: center;
+    color: var(--color-secondary);
+
+    @include respond (desktop) {
+        padding: 7.7rem 15rem;
+    }
+
+    @include respond (tab-land) {
+        padding: 5rem 18rem;
+    }
+
+    @include respond (tab-port) {
+        padding: 5rem 7rem;
+    }
+
+    @include respond (phone) {
+        padding: 3rem 2.5rem;           
+    }
+
+    &__text {
+        font-size: 1.9rem;
+        font-weight: 500;
+        margin-bottom: 4.6rem;
+
+        // @include respond (desktop) {
+        //     font-size: 1.6rem;
+        // }
+        
+        @include respond (tab-port) {
+            font-size: 1.65rem;
+        }
+
+        @include respond (phone) {
+            font-size: 1rem;
+            margin-bottom: 3rem;       
+        }
+    }
+
+    &__btn {
+        padding: 1rem 5rem;
+        font-size: 2.1rem;
+        font-weight: 600;
+        background-color: #F79421;
+        border: none;
+        color: inherit;
+        cursor: pointer;
+    }
+}

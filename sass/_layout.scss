@@ -1,0 +1,66 @@
+.header {
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba(#0872BA, 0.2), 
+        rgba(#bab708, 0.2)),
+        url(../img/Image1.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.section-about {
+    position: relative;
+    overflow: hidden;
+    // height: 78vh;
+    
+    &__svg {
+
+        @include respond (tab-land) {
+            display: none;
+        }
+
+        &-box {
+            position: absolute;
+            top: -5%;
+            left: 60%;
+            z-index: -1;
+        }
+    }
+}
+
+.section-services {
+    background-image: linear-gradient(
+        to right, 
+        rgba(#0872BA, 0.6), 
+        rgba(#0872BA, 0.7)),
+        url(../img/MaskGroup3.png);
+    background-size: cover;
+    // margin-top: 10rem;
+}
+
+.section-client {
+    background-image: url(../img/MaskGroup2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-case-study {
+    display: flex;
+
+    @include respond (tab-port) {
+        flex-wrap: wrap;
+    }
+}
+
+.section-opportunities {
+    background-color: var(--color-grey-2);
+}
+
+.section-footer {
+    background-color: #303030;
+}

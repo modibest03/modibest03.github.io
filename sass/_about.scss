@@ -1,0 +1,109 @@
+.about {
+    display: flex;
+    overflow: hidden;
+    // flex-wrap: wrap;
+
+    @include respond (phone) {
+        flex-wrap: wrap;
+    }
+
+    &__text {
+        padding: 9.8rem 0 9.8rem 12.1rem;
+        line-height: normal;
+        margin-right: 5.2rem;
+
+        @include respond (tab-land) {
+            padding: 6.5rem 0 6.5rem 9.8rem;
+            margin-right: auto;
+        }
+
+        @include respond (tab-port) {
+            padding: 7rem 0 6rem 8rem;
+            margin-right: auto;
+        }
+
+        @include respond (phone) {
+            order: 1;
+            // flex-basis: 70%;
+            padding: 4rem 3rem;
+            margin: 0 auto;
+        }
+
+        &-bg {
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 3.6rem;
+
+            @include respond (tab-land) {
+                font-size: 2rem;
+                margin-bottom: 5rem;
+            }
+
+            @include respond (tab-port) {
+                font-size: 1.6rem;
+            }
+
+            @include respond (phone) {
+                font-size: 1.2rem;
+            }
+
+            &-color {
+                color: var(--color-tertiary);
+                font-weight: 600;
+            }
+        }
+
+        &-sm {
+            font-size: 1.6rem;
+            font-family: "Poppins";
+            font-weight: 400;
+            margin-bottom: 2rem;
+
+            @include respond (tab-land) {
+                font-size: 1.5rem;
+            }
+
+            @include respond (tab-port) {
+                font-size: 1.1rem;
+            }
+
+            @include respond (phone) {
+                font-size: .8rem;   
+            }
+        }
+    }
+
+    &__image {
+        display: block;
+        align-self: flex-end;
+
+        @include respond (tab-land) {
+            transform: translateX(-1rem);
+        }
+
+        @include respond (tab-port) {
+            width: 80%;
+            transform: none;
+        }
+
+        
+
+        &-box {
+            align-self: flex-end;
+            // margin-top: rem;
+
+            @include respond (tab-port) {
+                width: 25%;
+            }
+
+            @include respond (phone) {
+                order: -1;
+                margin: 0 auto;
+                margin-top: 20px;
+                flex-basis: 50%;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,23 @@
+.team {
+    padding: 6.6rem 12.3rem;
+
+    @include respond (tab-land) {
+        padding: 6rem 5rem;
+    }
+
+    @include respond (phone) {
+        padding: 3rem 3rem;     
+    }
+
+    &__composition {
+        text-align: center;
+    }
+
+    &__img {
+        width: 100%;
+
+        @include respond (tab-land) {
+            width: 100%;
+        }
+    }
+}
